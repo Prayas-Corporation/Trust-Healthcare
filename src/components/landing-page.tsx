@@ -204,55 +204,55 @@ export function LandingPageComponent() {
         </section>
 
         <section id="about-us" className="container mx-auto px-4 py-20">
-          <h2 className="text-3xl font-bold mb-12 text-center">About Us</h2>
-          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
-            {[
-              {
-                image: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRpEPjTbL7OilHjNyp3DKz6G0O4SV17fuhGBg&s",
-                title: "Dr. Meera Sharma",
-                description: `"This platform has revolutionized the way I approach patient care. It's a game-changer for modern healthcare."`
-              },
-              {
-                image: "https://www.shutterstock.com/image-photo/smiling-handsome-asian-man-standing-260nw-1530346268.jpg",
-                title: "Alex Roy",
-                description: "\"Managing my medications has never been easier! I highly recommend this service to anyone looking for reliable healthcare solutions.\""
-              },
-              {
-                image: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRFSLWjFwZ6aR5shg03n9_yiENMzmHAh-nI2w&s",
-                title: "Riya Desai",
-                description: "\"I was able to quickly order essential medical supplies for my family during an emergency. Truly a lifesaver!\""
-              }
-            ].map((feature, index) => (
-              <Card
-                key={index}
-                className={`flex flex-col items-center text-center p-6 space-y-4 border-2 border-green-400 ${
-                  darkMode ? "bg-gray-800 border-gray-700" : "bg-white"
-                } transition-all duration-300 hover:scale-105 hover:shadow-lg ${
-                  darkMode ? "hover:shadow-green-400/20" : "hover:shadow-green-500/20"
-                }`}
-              >
-                <div
-                  className={`mb-4 inline-flex items-center justify-center w-24 h-24 rounded-full ${
-                    darkMode ? "bg-gray-700" : "bg-green-100"
-                  }`}
-                >
-                <Image
-  src={feature.image}
-  alt={feature.title}
-  width={96} // Set the width and height (24 * 4 px)
-  height={96}
-  className="rounded-full object-cover"
-/>
+  <h2 className="text-3xl font-bold mb-12 text-center">About Us</h2>
+  <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
+    {[
+      {
+        image: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRpEPjTbL7OilHjNyp3DKz6G0O4SV17fuhGBg&s",
+        title: "Dr. Meera Sharma",
+        description: `"This platform has revolutionized the way I approach patient care. It&apos;s a game-changer for modern healthcare."`
+      },
+      {
+        image: "https://www.shutterstock.com/image-photo/smiling-handsome-asian-man-standing-260nw-1530346268.jpg",
+        title: "Alex Roy",
+        description: `"Managing my medications has never been easier! I highly recommend this service to anyone looking for reliable healthcare solutions."`
+      },
+      {
+        image: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRFSLWjFwZ6aR5shg03n9_yiENMzmHAh-nI2w&s",
+        title: "Riya Desai",
+        description: `"I was able to quickly order essential medical supplies for my family during an emergency. Truly a lifesaver!"`
+      }
+    ].map((feature, index) => (
+      <Card
+        key={index}
+        className={`flex flex-col items-center text-center p-6 space-y-4 border-2 border-green-400 ${
+          darkMode ? "bg-gray-800 border-gray-700" : "bg-white"
+        } transition-all duration-300 hover:scale-105 hover:shadow-lg ${
+          darkMode ? "hover:shadow-green-400/20" : "hover:shadow-green-500/20"
+        }`}
+      >
+        <div
+          className={`mb-4 inline-flex items-center justify-center w-24 h-24 rounded-full ${
+            darkMode ? "bg-gray-700" : "bg-green-100"
+          }`}
+        >
+          <Image
+            src={feature.image}
+            alt={feature.title}
+            width={96} // Set the width and height (24 * 4 px)
+            height={96}
+            className="rounded-full object-cover"
+          />
+        </div>
+        <h3 className="text-xl font-semibold">{feature.title}</h3>
+        <p className={darkMode ? "text-white" : "text-gray-600"}>
+          {feature.description}
+        </p>
+      </Card>
+    ))}
+  </div>
+</section>
 
-                </div>
-                <h3 className="text-xl font-semibold">{feature.title}</h3>
-                <p className={darkMode ? "text-white" : "text-gray-600"}>
-                  {feature.description}
-                </p>
-              </Card>
-            ))}
-          </div>
-        </section>
 
         <section id="contact" className="container mx-auto px-4 py-20 text-center">
           <h2 className="text-3xl font-bold mb-6">Get in Touch with Trust Healthcare</h2>
