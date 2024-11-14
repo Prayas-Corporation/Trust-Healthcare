@@ -210,17 +210,17 @@ export function LandingPageComponent() {
       {
         image: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRpEPjTbL7OilHjNyp3DKz6G0O4SV17fuhGBg&s",
         title: "Dr. Meera Sharma",
-        description: `"This platform has revolutionized the way I approach patient care. It&apos;s a game-changer for modern healthcare."`
+        description: "This platform has revolutionized the way I approach patient care. It&apos;s a game-changer for modern healthcare."
       },
       {
         image: "https://www.shutterstock.com/image-photo/smiling-handsome-asian-man-standing-260nw-1530346268.jpg",
         title: "Alex Roy",
-        description: `"Managing my medications has never been easier! I highly recommend this service to anyone looking for reliable healthcare solutions."`
+        description: "Managing my medications has never been easier! I highly recommend this service to anyone looking for reliable healthcare solutions."
       },
       {
         image: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRFSLWjFwZ6aR5shg03n9_yiENMzmHAh-nI2w&s",
         title: "Riya Desai",
-        description: `"I was able to quickly order essential medical supplies for my family during an emergency. Truly a lifesaver!"`
+        description: "I was able to quickly order essential medical supplies for my family during an emergency. Truly a lifesaver!"
       }
     ].map((feature, index) => (
       <Card
@@ -252,6 +252,7 @@ export function LandingPageComponent() {
     ))}
   </div>
 </section>
+
 
 
         <section id="contact" className="container mx-auto px-4 py-20 text-center">
