@@ -256,10 +256,10 @@ export function LandingPageComponent() {
 
 
         <section id="contact" className="container mx-auto px-4 py-20 text-center">
-          <h2 className="text-3xl font-bold mb-6">Get in Touch with Trust Healthcare</h2>
-          <p className={`text-xl ${darkMode ? 'text-green-400' : 'text-green-600'} mb-8 max-w-2xl mx-auto`}>
-            We're here to answer any questions you may have. Feel free to reach out!
-          </p>
+        <h2 className="text-3xl font-bold mb-6">Get in Touch with Trust Healthcare</h2>
+  <p className={`text-xl ${darkMode ? 'text-green-400' : 'text-green-600'} mb-8 max-w-2xl mx-auto`}>
+    We&apos;re here to answer any questions you may have. Feel free to reach out!
+  </p>
           <form onSubmit={handleSubmit} className="flex flex-col justify-center max-w-md mx-auto space-y-4">
             <Input
               type="text"
