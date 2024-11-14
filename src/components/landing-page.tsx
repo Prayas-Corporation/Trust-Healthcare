@@ -85,6 +85,7 @@ export function LandingPageComponent() {
       setMessage('');
       alert('Message sent successfully!');
     } catch (error) {
+      console.error(error);
       alert('Failed to send message. Please try again.');
     }
   };
@@ -209,7 +210,7 @@ export function LandingPageComponent() {
               {
                 image: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRpEPjTbL7OilHjNyp3DKz6G0O4SV17fuhGBg&s",
                 title: "Dr. Meera Sharma",
-                description: "\"This platform has revolutionized the way I approach patient care. It's a game-changer for modern healthcare.\""
+                description: `"This platform has revolutionized the way I approach patient care. It's a game-changer for modern healthcare."`
               },
               {
                 image: "https://www.shutterstock.com/image-photo/smiling-handsome-asian-man-standing-260nw-1530346268.jpg",
@@ -235,11 +236,14 @@ export function LandingPageComponent() {
                     darkMode ? "bg-gray-700" : "bg-green-100"
                   }`}
                 >
-                  <img
-                    src={feature.image}
-                    alt={feature.title}
-                    className="rounded-full w-24 h-24 object-cover"
-                  />
+                <Image
+  src={feature.image}
+  alt={feature.title}
+  width={96} // Set the width and height (24 * 4 px)
+  height={96}
+  className="rounded-full object-cover"
+/>
+
                 </div>
                 <h3 className="text-xl font-semibold">{feature.title}</h3>
                 <p className={darkMode ? "text-white" : "text-gray-600"}>
